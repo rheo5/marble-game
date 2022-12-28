@@ -1,6 +1,6 @@
 # marble-game
 marble game in c++
-**unfinished
+- unfinished
 
 ## Todo
 - [ ] fix error
