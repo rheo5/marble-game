@@ -1,6 +1,9 @@
 # marble-game
-marble game in c++
-- unfinished
+- marble game explanation is printed
+- computer taunts player
+- game asks if player wants to go first
+- game asks if player wants to play again
+- prints how many games played, won, and lost
 
-## Todo
-- [ ] fix error
+#to-do
+[] fix error when player wins
