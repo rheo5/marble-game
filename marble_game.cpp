@@ -5,7 +5,6 @@
 
 using namespace std;
 
-//question 5: using structure instead of global variable
 struct Gamestate {
     int marbles_in_middle = -1;
     int human_marbles     = -1;
@@ -17,14 +16,12 @@ struct Gamestate {
 }; 
 Gamestate game;
 
-//question 2
 enum class Player {
     human,
     computer
 };
 Player whose_turn;
 
-//question 1: welcome screen
 void welcome_screen() {
   cout<<"+-----------------------+"<<endl;
   cout << "| Welcome to Even Wins! |\n";
@@ -63,7 +60,6 @@ void choose_first_player() {
   }
 } // choose_first_player
 
-//question 6: using operator for if else
 void next_player() {
   whose_turn = (whose_turn == Player::human) ? Player::computer : Player::human;
 }
@@ -121,7 +117,6 @@ void human_turn() {
   } // for
 } // human_turn
 
-//question 7: better AI 
 /* explanation: the ai takes 2 marbles until it is down to 5 or 4, where then AI will take 4 to take the obvious win. aside from 5 or 4, as the ai only adds 2, an even number, there is no way it loses. it is a very simple strategy but not fun for the player*/
 void computer_turn() {
   cout << "It's the computer's turn ...\n";
@@ -190,7 +185,6 @@ void play_game() {
   } // for
 } // play_game
 
-//question 3
 void stats() {
   cout<<"\nStatistics"<<endl;
   cout<<"----------"<<endl;
